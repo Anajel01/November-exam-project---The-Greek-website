@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <title>Billy The Greek</title>
-  <link rel="stylesheet" href="FoodTruckStyle.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-  <!-- Navigation bar for mobile (burger menu) -->
+  <div class="header-main-background">
+     <!-- Navigation bar for mobile (burger menu) -->
   <header>
     <nav class="nav">
       <button class="burger-menu" onclick="toggleMenu()">☰</button>
@@ -16,6 +21,7 @@
         <a href="#">About</a>
         <a href="#">Menu</a>
         <a href="#">Order</a>
+        <a href="#">EN/DK</a>
       </div>
       
       <div class="desktop-nav">
@@ -24,15 +30,45 @@
         <a href="#">Order</a>
         
       </div>
-      <div class="logo">logo</div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/Billy.png" alt="Logo">
+        </a>
+      </div>
+      
+      <div class="polylang-language-toggle-button">EN/DK</div>
+      <div class="Order-now-nav-button">
+        <a href="https://login.onlinepos.dk/taw_v3/18947/?page=menukort&pgid=2865385" target="_blank">
+          <button class="order-button"><span></span>Order now</button>
+        </a>
+      </div>
+      
     </nav>
   </header>
 
-  <!-- Main content / Where we put everything that goes into the navigation -->
+  <!-- Main content / Where we put everything that goes into the main page -->
   <main>
-    <h1>Food Truck</h1>
-    <a class="order-btn" href="FoodTruck.html">Order</a>
+    <div class="main-logo-image"><img src="img/Billy.png" alt="Logo image"></div>
+    <h1>Get a taste of Greece in Esbjerg.</h1>
+    <div class="main-buttons">
+      <div class="button-one">
+        <h4>Order in restaurant:</h4>
+      <a href="https://login.onlinepos.dk/taw_v3/18947/?page=menukort&pgid=2865385" target="_blank">
+        <button class="order-btn"><span></span>Bestil nu</button>
+      </a>
+      </div>
+      <div class="button-two">
+        <h4>Book a timeslot:</h4>
+      <a href="FoodTruck.html" target="_blank">
+        <button class="food-truck-btn"><span></span>Food truck</button>
+      </a>
+      </div>
+      
+      
+    </div>
   </main>
+  </div>
+ 
 
   <script src="script.js"></script>
 </body>
